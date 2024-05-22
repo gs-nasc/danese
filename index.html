@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane-se</title>
+</head>
+<body>
+    <div class="cursor">
+        <div class="cursor-small"></div>
+        <div class="cursor-big"></div>
+    </div>
+    <div class="container">
+        <div class="mockups">
+            <img src="assets/images/logo-pink.png" alt="Logo dane-se" class="mockup-logo">
+            <img src="assets/images/lata-verde.png" alt="Lata dane-se com gás" class="lata-verde">
+            <img src="assets/images/lata-rosa.png" alt="Lata dane-se sem gás" class="lata-rosa">
+            <img src="assets/images/caixa-verde.png" alt="Caixa dane-se com gás" class="caixa-verde">
+            <img src="assets/images/caixa-rosa.png" alt="Caixa dane-se sem gás" class="caixa-rosa">
+        </div>
+        <div class="form">
+            <div class="logo-area">
+                <img src="assets/images/logo-pink.png" alt="Logo verde" class="hoverable">
+            </div>
+            <span>Sim, somos uma empresa de água mineral que acredita que a água merece mais do que apenas um marketing previsível e sem graça! Estamos aqui para acabar com a palhaçada das grandes empresas que te inundam com propagandas chatas e invasivas nas redes sociais! Nossa missão principal é parar de te interromper e começar a te entreter, incentivando a hidratação e contribuindo para um mundo mais sustentável, com menos plástico.</span>
+            <span>Agora chega de falar sobre nós e nos conte um pouco mais sobre você!</span>
+            <div class="form-area">
+                <form action="#" id="get-form">
+                    <div class="input-area hoverable">
+                        <label for="name">Seu nome completo:</label>
+                        <input type="text" name="name" id="name" autocomplete="off">
+                    </div>
+                    <div class="input-area contact hoverable">
+                        <label for="email">Seu e-mail:</label>
+                        <input type="email" name="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="input-area contact hoverable">
+                        <label for="phone">Seu telefone:</label>
+                        <input type="text" name="phone" id="phone" autocomplete="off">
+                    </div>
+                    <div class="input-area hoverable">
+                        <label for="birth">Data de nascimento:</label>
+                        <div class="birth-area">
+                            <input type="number" name="birth-day" id="birth-day" min="1" max="31" autocomplete="off" value="01">
+                            <div class="select-box">
+                                <div class="default">
+                                    <input type="text" name="birth-month" id="birth-month" autocomplete="off">
+                                    <input type="hidden" name="birth-month-h" id="birth-month-h" autocomplete="off">
+                                </div>
+                                <ul class="options" style="z-index: 12;">
+                                    <li data-value="01">Janeiro</li>
+                                    <li data-value="02">Fevereiro</li>
+                                    <li data-value="03">Março</li>
+                                    <li data-value="04">Abril</li>
+                                    <li data-value="05">Maio</li>
+                                    <li data-value="06">Junho</li>
+                                    <li data-value="07">Julho</li>
+                                    <li data-value="08">Agosto</li>
+                                    <li data-value="09">Setembro</li>
+                                    <li data-value="10">Outubro</li>
+                                    <li data-value="11">Novembro</li>
+                                    <li data-value="12">Dezembro</li>
+                                </ul>
+                            </div>
+                            <input type="number" name="birth-year" id="birth-year" min="1900" max="2014" autocomplete="off" value="2000">
+                        </div>
+                    </div>
+                    <div class="location">
+                        <div class="input-area state hoverable">
+                            <label for="state">Estado:</label>
+                            <div class="select-box"  style="z-index: 10;">
+                                <div class="default">
+                                    <input type="text" name="state" id="state" autocomplete="off">
+                                    <input type="hidden" name="state-h" id="state-h" autocomplete="off">
+                                </div>
+                                <ul class="options state">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-area city hoverable">
+                            <label for="city">Cidade:</label>
+                            <div class="select-box" style="z-index: 10;">
+                                <div class="default">
+                                    <input type="text" name="city" id="city" autocomplete="off">
+                                    <input type="hidden" name="city-h" id="city-h" autocomplete="off">
+                                </div>
+                                <ul class="options city">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <label for="interest">Qual é o seu interesse na DANE-SE:</label>
+                        <div class="radios">
+                            <div class="radio-area">
+                                <input type="radio" name="interest" id="interest-person">
+                                <label for="interest-person" class="hoverable">Consumo próprio</label>
+                            </div>
+                            <div class="radio-area">
+                                <input type="radio" name="interest" id="interest-business">
+                                <label for="interest-business" class="hoverable">Revenda</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit-button hoverable">Enviar</button>
+                </form>
+            </div>
+            <div class="copy">
+                <span>
+                    <a class="hoverable" href="https://www.instagram.com/dane_se_oficial/" target="_blank">
+                        Instagram ↗
+                    </a>
+                </span>
+                <span>Dane-se 2024 &copy; Todos os direitos reservados</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>
